@@ -1,3 +1,71 @@
-#root {
-  background-color: #DAD2B8;
+* {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+#root {
+  background: rgb(255,255,255);
+  background: linear-gradient(18deg, rgba(255,255,255,1) 1%, rgba(226,219,199,1) 43%, rgba(218,210,184,1) 77%);
+/* beige background ^^ */
+
+/* background: rgb(134,131,184);
+background: linear-gradient(331deg, rgba(134,131,184,1) 0%, rgba(42,42,85,1) 0%, rgba(0,0,83,1) 76%); */
+  /* blue background ^^ */
+  background-size: cover;
+  background-position: center;
+}
+.onload-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  width: auto;
+  gap: 7px;
+}
+#name {
+  color: #000053;
+  max-height: 50px;
+  max-width: 320px;
+  font-size: 40px;
+  white-space: nowrap;
+  border-right: .17em solid orange;
+  overflow: hidden;
+  letter-spacing: .1em;
+  animation: 
+  typing 4s steps(45, end),
+  blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0}
+  to { width: 100%; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: #FB7409; }
+}
+#info {
+  max-height: 50px;
+  max-width: 440px;
+}
+#info-block {
+  max-height: 35px;
+  position: absolute;
+  border: solid transparent;
+  animation-name: block-reveal;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  margin-top: -33px;
+  margin-left: -5px;
+  background-color: #FB7409;
+  max-width: 430px;
+  border: transparent;
+}
+@keyframes block-reveal {
+  100% {width: 85%;}
+  0% {width: 0;}
+
+} 
