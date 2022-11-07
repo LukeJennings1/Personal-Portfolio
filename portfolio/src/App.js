@@ -1,8 +1,10 @@
+import Onload from "./onload";
+
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="site-container">
+      <Onload/>
   </div>
   );
 }
