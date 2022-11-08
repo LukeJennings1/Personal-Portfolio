@@ -1,7 +1,10 @@
 import './index.css';
-
+import scrollIcon from './assets/scroll.png'
+import { useRef } from 'react'
 
 function Onload() {
+
+
 
 
     return (
@@ -10,6 +13,7 @@ function Onload() {
     <h2 id = 'info'>Full-Stack Dev | Engineering Graduate
     <div id = 'info-block'></div>
     </h2>
+    <img className = 'scrollIcon' id = 'scroll-down-icon' src={scrollIcon}></img>
     </div>
     )
 }
