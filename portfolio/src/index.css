@@ -1,32 +1,26 @@
 * {
-  height: 100%;
+  /* height: 100%; */
   margin: 0;
   padding: 0;
-}
-
-#root {
-  background: rgb(255,255,255);
-  background: linear-gradient(18deg, rgba(255,255,255,1) 1%, rgba(226,219,199,1) 43%, rgba(218,210,184,1) 77%);
-/* beige background ^^ */
-
-/* background: rgb(134,131,184);
-background: linear-gradient(331deg, rgba(134,131,184,1) 0%, rgba(42,42,85,1) 0%, rgba(0,0,83,1) 76%); */
-  /* blue background ^^ */
+  background-color:#1a1a2d;
   background-size: cover;
   background-position: center;
+  font-family: 'Rubik', sans-serif;
+  --main-content-color: #e7e6e6;
+  --secondary-content-color: #d3d3d3;
+
 }
 .onload-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Rubik', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
   gap: 7px;
 }
 #name {
-  color: #000053;
+  color: var(--main-content-color);
   max-height: 50px;
   max-width: 320px;
   font-size: 40px;
@@ -49,9 +43,7 @@ background: linear-gradient(331deg, rgba(134,131,184,1) 0%, rgba(42,42,85,1) 0%,
 #info {
   max-height: 40px;
   max-width: 440px;
-  color: #3d3d11;
-  /* color: black; */
-
+  color: var(--secondary-content-color)
 }
 #info-block {
   max-height: 35px;
@@ -87,4 +79,54 @@ background: linear-gradient(331deg, rgba(134,131,184,1) 0%, rgba(42,42,85,1) 0%,
   0% { opacity: 0; margin-top: 200px;}
   100% { opacity: 1; margin-top: 210px;}
 }
-
+#about-me-wrapper {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#about-me-page-title {
+  margin-top: 2%;
+  color: var(--main-content-color);
+  padding: 15px;
+}
+#grid-container {
+  display: flex;
+  justify-content: center;
+  
+  object-fit: contain;
+  max-width: 80%;
+}
+.about-me-content-wrapper {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 200px 200px 200px 200px;
+  min-height: 30vh;
+  gap: 15px;
+  margin-bottom: 10%;
+  color: var(--secondary-content-color);
+}
+.about-me-text-content {
+  display: flex;
+  color: var(--secondary-content-color);
+  text-align: center;
+}
+#about-me-tech-stack-title {
+  color: var(--main-content-color);
+  padding: 15px;
+}
+.grid-square {
+  /* max-height: 100%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.icon {
+  max-height: 60px;
+  min-height: 10px;
+}

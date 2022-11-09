@@ -2,7 +2,7 @@ import './index.css';
 import scrollIcon from './assets/scroll.png'
 import { useRef } from 'react'
 
-function Onload() {
+function Onload(props) {
 
 
 
