@@ -13,7 +13,9 @@ function Onload(props) {
     <h2 id = 'info'>Full-Stack Dev | Engineering Graduate
     <div id = 'info-block'></div>
     </h2>
+    <a id = 'scroll-down-wrapper' href="#about-me-wrapper">
     <img className = 'scrollIcon' id = 'scroll-down-icon' src={scrollIcon}></img>
+    </a>
     </div>
     )
 }

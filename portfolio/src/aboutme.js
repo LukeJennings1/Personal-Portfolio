@@ -21,19 +21,19 @@ function Aboutme() {
  
     return (
     <div id = 'about-me-wrapper'>
-            <h2 id = 'about-me-page-title' ref={ref}>{console.log(inView, entry)} About Me </h2>
+            <h2 id = 'about-me-page-title' ref={ref}>{console.log(inView, entry)} - About Me - </h2>
             <p className='about-me-text-content'>Hi! I'm Luke...and I love building things!</p>
             <p></p>
             <p className='about-me-text-content'>From building my first computer at 12 years old to graduating with an electrical engineering degree I have always
-                been curious about how things work. My love of development grew from using low-level languages (C++/C) in my degree 
-                where I found myself being drawn to the design and UI/UX aspect of software development.  </p>
+                been curious about how things work "under the hood". My love of development grew from using low-level languages (C++/C) in my degree 
+                where I found myself being drawn more to the design and UI/UX aspect of software development.  </p>
                 <p></p>
             <p className='about-me-text-content'>While studying for my degree I worked as a project co-ordinator for an FTSE 500 company within a software-orientated
                 engineering team. I believe this experience of working and studying full-time demonstrates my passion for continual 
                 professional development and gives me key insight into the management behind software-based project rollouts 
                 in addition to my software development and engineering experience.  </p>
                 <p></p>
-            <h2 id = 'about-me-tech-stack-title'>My Skills</h2>
+            <h2 id = 'about-me-tech-stack-title'>- My Skills -</h2>
             <div id = 'grid-container'>
         <div className = 'about-me-content-wrapper'>
         <div className='grid-square' id = 'grid-square-1'>

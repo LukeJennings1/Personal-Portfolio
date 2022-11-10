@@ -1,5 +1,4 @@
 * {
-  /* height: 100%; */
   margin: 0;
   padding: 0;
   background-color:#1a1a2d;
@@ -8,6 +7,7 @@
   font-family: 'Rubik', sans-serif;
   --main-content-color: #e7e6e6;
   --secondary-content-color: #d3d3d3;
+  scroll-behavior: smooth;
 
 }
 .onload-wrapper {
@@ -17,6 +17,8 @@
   flex-direction: column;
   min-height: 100vh;
   width: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   gap: 7px;
 }
 #name {
@@ -58,6 +60,7 @@
   background-color: #FB7409;
   max-width: 430px;
   border: transparent;
+  height: 100%;
 }
 @keyframes block-reveal {
   100% {width: 85%;}
@@ -70,7 +73,7 @@
   animation-name: scrollMove;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-direction: alternate;
   opacity: 0;
   margin-top: 200px;
@@ -78,6 +81,10 @@
 @keyframes scrollMove {
   0% { opacity: 0; margin-top: 200px;}
   100% { opacity: 1; margin-top: 210px;}
+}
+#scroll-down-wrapper {
+  display: flex;
+  justify-content: center;
 }
 #about-me-wrapper {
   display: flex;  
@@ -87,6 +94,7 @@
   min-height: 100vh;
   margin-left: 10%;
   margin-right: 10%;
+  gap: 5px;
 }
 #about-me-page-title {
   margin-top: 2%;
@@ -96,18 +104,22 @@
 #grid-container {
   display: flex;
   justify-content: center;
-  
   object-fit: contain;
-  max-width: 80%;
+  max-width: 1500px;
+  margin-bottom: 5%;
 }
 .about-me-content-wrapper {
   display: grid;
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 200px 200px 200px 200px;
   min-height: 30vh;
+  max-width: 100%;
   gap: 15px;
-  margin-bottom: 10%;
   color: var(--secondary-content-color);
+}
+@media (max-width: 900px) {
+  .about-me-content-wrapper { grid-template-columns: repeat(3, 100px);
+   }
 }
 .about-me-text-content {
   display: flex;
@@ -119,7 +131,6 @@
   padding: 15px;
 }
 .grid-square {
-  /* max-height: 100%; */
   display: flex;
   align-items: center;
   flex-direction: column;
