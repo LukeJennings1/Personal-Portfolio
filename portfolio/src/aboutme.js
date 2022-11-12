@@ -1,6 +1,5 @@
 import './index.css'
 import { useInView } from 'react-intersection-observer';
-
 import { useRef, useState } from 'react';
 import Myskills from './myskills';
 
