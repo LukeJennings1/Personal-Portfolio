@@ -10,7 +10,7 @@ function Onload(props) {
     return (
     <div className = 'onload-wrapper'>
     <h1 id = 'name'>Luke Jennings</h1>
-    <h2 id = 'info'>Full-Stack Dev | Engineering Graduate
+    <h2 id = 'info'>Full-Stack-Developer
     <div id = 'info-block'></div>
     </h2>
     <a id = 'scroll-down-wrapper' href="#about-me-wrapper">
