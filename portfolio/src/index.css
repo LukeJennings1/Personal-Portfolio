@@ -97,9 +97,45 @@
   gap: 5px;
 }
 #about-me-page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   margin-top: 2%;
   color: var(--main-content-color);
   padding: 15px;
+}
+#fade-right-about-me {
+  margin-right: 10px;
+  opacity: 1;
+}
+.animationRight {
+  position: absolute;
+  animation-name: fadeRight;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: transparent;
+}
+@keyframes fadeRight {
+  from {margin-right: 600px; opacity: 0;}
+  to {margin-right: 175px; opacity: 1;}
+}
+#fade-left-about-me {
+  margin-left: 10px;
+  opacity: 1;
+}
+.animationLeft {
+  position: absolute;
+  animation-name: fadeLeft;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: transparent;
+}
+@keyframes fadeLeft {
+  from {margin-left: 600px; opacity: 0;}
+  to {margin-left: 175px; opacity: 1;}
 }
 #grid-container {
   display: flex;
@@ -136,8 +172,57 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
+  perspective: 1000px;
 }
 .icon {
   max-height: 60px;
   min-height: 10px;
+}
+#icon1 {
+  animation-name: flipper;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transform: rotateY(180deg);
+  animation-fill-mode: forwards;
+  /* transition: transform 3s */
+  transform-style: preserve-3d;
+}
+@keyframes flipper {
+  from {transform:rotateY(180deg);}
+  to {transform:rotateY(0deg);}
+}
+
+#projects-wrapper {
+  min-height: 100vh;
+  margin-left: 7%;
+  margin-right: 7%;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#projects-page-title {
+  color: var(--main-content-color);
+}
+.projects-grid-wrapper {
+  display: grid;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  grid-template-columns: 650px 650px;
+  grid-template-rows: repeat(4 310px);
+  gap: -1px;
+  object-fit: cover;
+} 
+@media (max-width: 1200px) {
+  .projects-grid-wrapper {grid-template-columns: 600px} 
+}
+@media (max-width: 900px) {
+  .projects-grid-wrapper {grid-template-columns: 375px} 
+}
+.projects-thumbnail-image {
+ object-fit: cover;
+ max-width: 700px;
+ max-height: 338px;
+ width: 100%;
+ height: 100%;
 }

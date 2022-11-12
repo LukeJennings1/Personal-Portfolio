@@ -1,6 +1,7 @@
 import React from 'react';
 import Onload from "./onload";
 import Aboutme from './aboutme';
+import Projects from './projects'
 import "./index.css"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="site-container">
       <Onload/>
       <Aboutme />
+      <Projects />
   </div>
   );
 }
