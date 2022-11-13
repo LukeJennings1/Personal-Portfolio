@@ -53,7 +53,7 @@ const exitContent = (projectCard, thumbailImage, header) => {
                 <div className='project-info-card-button-wrapper'
                  ref = {ProjectCard1} >
                      <a href='https://github.com/LukeJennings1' target="_blank">
-                    <button className='live-code-project-grid-buttons'>Repository</button>
+                    <button className='live-code-project-grid-buttons'>Repo</button>
                     </a>
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
                 </div>
@@ -70,7 +70,7 @@ const exitContent = (projectCard, thumbailImage, header) => {
                 </div>
                 <div className='project-info-card-button-wrapper'
                 ref = {ProjectCard2}>
-                    <button className='live-code-project-grid-buttons'>Repository</button>
+                    <button className='live-code-project-grid-buttons'>Repo</button>
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
                 </div>
             </div>
@@ -81,13 +81,17 @@ const exitContent = (projectCard, thumbailImage, header) => {
          onMouseLeave = {() => {exitContent(ProjectCard3, thumbailImage3, header3)}}>
         <div className='project-title-card'>
                 <div className='project-title-card-header' ref={header3}>
-                    <h1 className='project-title'>Project Title</h1>
-                    <h2 className='project-title project-subheading'>Technology Stack Used</h2>
+                    <h1 className='project-title'>Wheres Wally? Game</h1>
+                    <h2 className='project-title project-subheading'>React | FireBase | HTML5 | CSS3 </h2>
                 </div>
                 <div className='project-info-card-button-wrapper'
                 ref = {ProjectCard3}>
-                    <button className='live-code-project-grid-buttons'>Repository</button>
+                    <a href='https://github.com/LukeJennings1/Wheres-Wally-Game' target="_blank">
+                    <button className='live-code-project-grid-buttons'>Repo</button>
+                    </a>
+                    <a href='https://lukejennings1.github.io/Wheres-Wally-Game/' target="_blank">
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
+                    </a>
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage3} src={wheresWallyGame}></img>
@@ -97,13 +101,17 @@ const exitContent = (projectCard, thumbailImage, header) => {
         onMouseLeave = {() => {exitContent(ProjectCard4, thumbailImage4, header4)}}>
         <div className='project-title-card'>
                 <div className='project-title-card-header' ref={header4}>
-                    <h1 className='project-title'>Project Title</h1>
-                    <h2 className='project-title project-subheading'>Technology Stack Used</h2>
+                    <h1 className='project-title'>E-Commerce Site</h1>
+                    <h2 className='project-title project-subheading'>React | HTML5 | SASS</h2>
                 </div>
                 <div className='project-info-card-button-wrapper'
                 ref = {ProjectCard4}>
-                    <button className='live-code-project-grid-buttons'>Repository</button>
+                    <a href='https://github.com/LukeJennings1/Shopping-Cart' target="_blank">
+                    <button className='live-code-project-grid-buttons'>Repo</button>
+                    </a>
+                    <a href='https://lukejennings1.github.io/Shopping-Cart/#/' target="_blank">
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
+                    </a>
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage4} src={EcomSite}></img>
@@ -113,13 +121,17 @@ const exitContent = (projectCard, thumbailImage, header) => {
         onMouseLeave = {() => {exitContent(ProjectCard5, thumbailImage5, header5)}}>
         <div className='project-title-card'>
                 <div className='project-title-card-header' ref={header5}>
-                    <h1 className='project-title'>Project Title</h1>
-                    <h2 className='project-title project-subheading'>Technology Stack Used</h2>
+                    <h1 className='project-title'>Road Sign Memory Game</h1>
+                    <h2 className='project-title project-subheading'>React | HTML5 | CSS3</h2>
                 </div>
                 <div className='project-info-card-button-wrapper'
                 ref = {ProjectCard5}>
-                    <button className='live-code-project-grid-buttons'>Repository</button>
+                    <a href='https://github.com/LukeJennings1/Memory-Card-Game' target="_blank">
+                    <button className='live-code-project-grid-buttons'>Repo</button>
+                    </a>
+                    <a href='https://lukejennings1.github.io/Memory-Card-Game/' target="_blank">
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
+                    </a>
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage5} src={memoryCardGameImage}></img>
@@ -129,13 +141,17 @@ const exitContent = (projectCard, thumbailImage, header) => {
         onMouseLeave = {() => {exitContent(ProjectCard6, thumbailImage6, header6)}}>
         <div className='project-title-card'>
                 <div className='project-title-card-header' ref={header6}>
-                    <h1 className='project-title'>Project Title</h1>
-                    <h2 className='project-title project-subheading'>Technology Stack Used</h2>
+                    <h1 className='project-title'>Weather API App</h1>
+                    <h2 className='project-title project-subheading'>Javascript | HTML5 | CSS3</h2>
                 </div>
                 <div className='project-info-card-button-wrapper'
                 ref = {ProjectCard6}>
-                    <button className='live-code-project-grid-buttons'>Repository</button>
+                    <a href='https://github.com/LukeJennings1/To-Do-List-App' target="_blank">
+                    <button className='live-code-project-grid-buttons'>Repo</button>
+                    </a>
+                    {/* <a href='https://github.com/LukeJennings1/To-Do-List-App' target="_blank">
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
+                    </a> */}
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage6} src = {weatherAPIApp}></img>

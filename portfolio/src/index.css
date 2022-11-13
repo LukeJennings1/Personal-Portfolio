@@ -335,6 +335,7 @@
   text-align: center;
   margin-top: 60px;
   z-index: 1;
+  gap: 10px;
   opacity: 0;
 }
 .project-title {
@@ -344,6 +345,7 @@
 }
 .project-subheading {
   color: var(--tertiary-content-color);
+  font-size: 20px;
 }
 #header-reveal-animation-class {
   animation-name: header-reveal;
