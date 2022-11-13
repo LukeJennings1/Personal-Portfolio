@@ -318,6 +318,15 @@
   from {margin-top: 600px; opacity: 0;}
   to {margin-top: 500px; opacity: 1;}
 }
+@media  (max-width: 900px) { 
+  #project-grid-square-animation-initial {margin-top: 300px;}
+  .project-title{margin-top: -35px;}
+  .project-subheading{margin-top: -10px;}
+  @keyframes button-reveal {
+    from {margin-top: 300px; opacity: 0;}
+    to {margin-top: 280px; opacity: 1;}
+  }
+}
 .project-title-card {
   display: flex;
   justify-content: center;
