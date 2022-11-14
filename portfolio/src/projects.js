@@ -55,7 +55,9 @@ const exitContent = (projectCard, thumbailImage, header) => {
                      <a href='https://github.com/LukeJennings1' target="_blank">
                     <button className='live-code-project-grid-buttons'>Repo</button>
                     </a>
+                    <a href='https://github.com/LukeJennings1' target="_blank">
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
+                    </a>
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage1} src={placeHolder}></img>
@@ -70,8 +72,12 @@ const exitContent = (projectCard, thumbailImage, header) => {
                 </div>
                 <div className='project-info-card-button-wrapper'
                 ref = {ProjectCard2}>
+                    <a href='https://github.com/LukeJennings1' target="_blank">
                     <button className='live-code-project-grid-buttons'>Repo</button>
+                    </a>
+                    <a href='https://github.com/LukeJennings1' target="_blank">
                     <button className='live-code-project-grid-buttons'>Live Demo</button>
+                    </a>
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage2} src={placeHolder}></img>

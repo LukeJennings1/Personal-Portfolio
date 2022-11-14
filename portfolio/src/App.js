@@ -1,7 +1,8 @@
 import React from 'react';
 import Onload from "./onload";
 import Aboutme from './aboutme';
-import Projects from './projects'
+import Projects from './projects';
+import ContactMe from './contact';
 import "./index.css"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Onload/>
       <Aboutme />
       <Projects />
+      <ContactMe />
   </div>
   );
 }

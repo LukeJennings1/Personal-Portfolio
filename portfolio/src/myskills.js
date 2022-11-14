@@ -51,10 +51,10 @@ const icon12 = useRef()
 
     return (
 <>
-        <h2 id = 'about-me-tech-stack-title' ref={ref}>{console.log(inView)}- My Skills -</h2>
+        <h2 id = 'about-me-tech-stack-title' >{console.log(inView)}- My Skills -</h2>
             <div id = 'grid-container'>
         <div className = 'about-me-content-wrapper'>
-        <div className='grid-square' id = 'grid-square-1'>
+        <div className='grid-square' ref={ref} id = 'grid-square-1'>
             <img className='icon' src={htmlIcon} ref ={icon1}></img>
             <div>HTML 5</div>
         </div>
