@@ -34,25 +34,25 @@ function ContactMe() {
                 </div>               
                 <div className='contact-me-links'>
                     <img className='send-Icon' src={emailIcon}></img>
-                    <h2>LukeJennings123@gmail.com</h2>
+                    <h2 id = 'send-icon-text'>LukeJennings123@gmail.com</h2>
                 </div>
 
                 <div className="contact-me-shape"></div>
                 <div id='contact-me-social-links'>
                     <div>
-                        <a href='https://github.com/LukeJennings1'>
+                        <a href='https://github.com/LukeJennings1' target="_blank">
                         <img className='link-Icon' src={githubIcon}></img>
                         </a>
                     </div>
                     <div>
-                        <a href='https://www.linkedin.com/in/luke-jennings-10123893/'>
+                        <a href='https://www.linkedin.com/in/luke-jennings-10123893/' target="_blank">
                         <img className='link-Icon' src={linkedInIcon}></img>
                         </a>
                     </div>
 
                 </div> 
 
-                <div className="contact-me-shape"></div>
+                <div id = 'page-bottom' className="contact-me-shape"></div>
 
             </div>
 
