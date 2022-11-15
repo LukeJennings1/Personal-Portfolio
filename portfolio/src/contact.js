@@ -10,7 +10,7 @@ function ContactMe() {
 
 
     return (
-        <div className="contact-me-page-wrapper">
+        <div className="contact-me-page-wrapper"> 
             <h2 id = 'contact-me-page-title'>- Contact Me -</h2>
 
 

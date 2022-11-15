@@ -87,6 +87,12 @@
   display: flex;
   justify-content: center;
 }
+@media (min-width: 1200px) {
+  .fadeAnimation {
+    animation: fade-in 0.5s 2s 1 forwards;
+    pointer-events: auto;
+  }
+}
 .bookMark-wrapper {
   position: fixed;
   display: flex;
@@ -96,20 +102,25 @@
   top: 10px;
   width: 5%;
   margin-top: 100px; 
-  margin-left: 95%;
+  margin-left: 105%;
   background-color: transparent;
   opacity: 0;
   pointer-events: none;
 }
 #bookmark1, #bookmark2, #bookmark3, #bookmark4, #bookmark5 {
-  margin-right: -95%;
+  margin-right: 5%;
 }
 #bookmark1:hover, #bookmark2:hover, #bookmark3:hover, #bookmark4:hover, #bookmark5:hover {
-  margin-right: -5%;
+  margin-right: 95%;
 }
-.fadeAnimation {
-  animation: fade-in 2s 3s 1 forwards;
-  pointer-events: auto;
+@media (max-width: 900px) {
+  .bookMark-wrapper {opacity:0; height: 0px; width: 0px;}
+}
+@media (min-width: 1200px) {
+  .fadeAnimation {
+    animation: fade-in 0.5s 2s 1 forwards;
+    pointer-events: auto;
+  }
 }
 @keyframes fade-in {
   from {opacity: 0;}

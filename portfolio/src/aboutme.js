@@ -3,6 +3,13 @@ import { useInView } from 'react-intersection-observer';
 import { useRef, useState } from 'react';
 import Myskills from './myskills';
 import aboutMeIcon from './assets/aboutmeIcon.png'
+import homeIcon from './assets/homeIconMAIN.png'
+import skillsIcon from './assets/skillsIconMAIN.png'
+import projectsIcon from './assets/projectsIconMain.png'
+import contactIcon from './assets/contactIconMAIN.png'
+
+
+
 
 
 
@@ -34,13 +41,25 @@ function Aboutme() {
 
     return (
     <div id = 'about-me-wrapper'>
+        
         <div className='bookMark-wrapper' ref={fadeInAnimation}>
-                <img className = 'bookMark' id = 'bookmark1' src={aboutMeIcon}></img>
-                <img className = 'bookMark' id = 'bookmark2' src={aboutMeIcon}></img>
-                <img className = 'bookMark' id = 'bookmark3' src={aboutMeIcon}></img>
-                <img className = 'bookMark' id = 'bookmark4' src={aboutMeIcon}></img>
-                <img className = 'bookMark' id = 'bookmark5' src={aboutMeIcon}></img>
+            <a href='.onload-wrapper' className = 'bookMark' id = 'bookmark1'>
+                <img className = 'bookMark' src={homeIcon}></img>
+            </a>
+            <a href ='#about-me-page-title' className = 'bookMark' id = 'bookmark2'>
+                <img className = 'bookMark' src={aboutMeIcon}></img>
+            </a>
+            <a href ='#about-me-tech-stack-title' className = 'bookMark' id = 'bookmark3'>
+                <img  className = 'bookMark' src={skillsIcon}></img>
+            </a>
+            <a href ='#projects-wrapper' className = 'bookMark' id = 'bookmark4'>
+                <img className = 'bookMark' src={projectsIcon}></img>
+            </a>
+            <a href ='#contact-me-page-title' className = 'bookMark' id = 'bookmark5'>
+                <img  className = 'bookMark' src={contactIcon}></img>
+            </a>              
       </div>
+
             <h2 id = 'about-me-page-title' ref={ref}>
             
                 
