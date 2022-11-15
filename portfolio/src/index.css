@@ -87,6 +87,47 @@
   display: flex;
   justify-content: center;
 }
+.bookMark-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: auto;
+  top: 10px;
+  width: 5%;
+  margin-top: 100px; 
+  margin-left: 95%;
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+}
+#bookmark1, #bookmark2, #bookmark3, #bookmark4, #bookmark5 {
+  margin-right: -95%;
+}
+#bookmark1:hover, #bookmark2:hover, #bookmark3:hover, #bookmark4:hover, #bookmark5:hover {
+  margin-right: -5%;
+}
+.fadeAnimation {
+  animation: fade-in 2s 3s 1 forwards;
+  pointer-events: auto;
+}
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.bookMark {
+  height: 85px;
+  margin-top: -40px;
+  width: auto;
+  display: flex;
+  background-color: transparent;
+}
+#enter-bookmark {
+  position: absolute;
+    margin-top: -200px;
+    width: 1px;
+    height: auto;
+}
 #about-me-wrapper {
   display: flex;  
   justify-content: center;
@@ -383,6 +424,7 @@
 #contact-me-input-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   max-height: 100vh;
   max-width: 100%;
@@ -410,14 +452,15 @@
   height: 100vh;
   width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   #conact-me-content-wrapper{flex-direction: column;}
   #contact-me-page-title{margin-top: 150px;}
-  .contact-me-form-inputs {width: 292px;}
+  .contact-me-form-inputs { width: 100%;}
   #page-bottom {margin-bottom: 10px;}
   #send-icon-text { width: 200px; overflow-wrap: break-word; }
   #contact-me-links-wrapper {margin-top: -20px;}
   #conact-me-content-wrapper {gap: 0px;}
+  #contact-me-submit-button {max-width: 320px; min-width: 300px;}
 }
 .contact-me-shape {
   height: 3px;
