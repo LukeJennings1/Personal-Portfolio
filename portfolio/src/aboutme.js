@@ -2,11 +2,11 @@ import './index.css'
 import { useInView } from 'react-intersection-observer';
 import { useRef, useState } from 'react';
 import Myskills from './myskills';
-import aboutMeIcon from './assets/aboutmeIcon.png'
-import homeIcon from './assets/homeIconMAIN.png'
-import skillsIcon from './assets/skillsIconMAIN.png'
-import projectsIcon from './assets/projectsIconMain.png'
-import contactIcon from './assets/contactIconMAIN.png'
+import aboutMeIcon from './assets/icons8-bookmark-480 (2).png'
+import homeIcon from './assets/icons8-bookmark-480 (1).png'
+import skillsIcon from './assets/icons8-bookmark-480 (6).png'
+import projectsIcon from './assets/icons8-bookmark-480 (4).png'
+import contactIcon from './assets/icons8-bookmark-480 (5).png'
 
 
 
@@ -34,7 +34,6 @@ function Aboutme() {
          aboutMeAnimation1.current.id += 'about-me-text-content-animation'
          aboutMeAnimation2.current.id += 'about-me-text-content-animation2'
          aboutMeAnimation3.current.id += 'about-me-text-content-animation3'
-         fadeInAnimation.current.className = 'bookMark-wrapper fadeAnimation'
      }
  
 
@@ -42,7 +41,7 @@ function Aboutme() {
     return (
     <div id = 'about-me-wrapper'>
         
-        <div className='bookMark-wrapper' ref={fadeInAnimation}>
+        <div className='bookMark-wrapper fadeAnimation' ref={fadeInAnimation}>
             <a href='.onload-wrapper' className = 'bookMark' id = 'bookmark1'>
                 <img className = 'bookMark' src={homeIcon}></img>
             </a>

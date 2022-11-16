@@ -5,7 +5,6 @@ import Projects from './projects';
 import ContactMe from './contact';
 import Myskills from './myskills';
 import "./index.css"
-import aboutMeIcon from './assets/aboutmeIcon.png'
 import { useInView } from 'react-intersection-observer';
 import { useRef, useState } from 'react';
 
