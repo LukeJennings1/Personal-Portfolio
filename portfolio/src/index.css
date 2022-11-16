@@ -7,7 +7,7 @@
   font-family: 'Rubik', sans-serif;
   --main-content-color: #e7e6e6;
   --secondary-content-color: #d3d3d3;
-  --tertiary-content-color: #FB7409; ;
+  --tertiary-content-color: #FB7409;
   scroll-behavior: smooth;
 
 }
@@ -108,10 +108,10 @@
   pointer-events: none;
 }
 #bookmark1, #bookmark2, #bookmark3, #bookmark4, #bookmark5 {
-  margin-right: 30%;
+  margin-right: 35%;
 }
 #bookmark1:hover, #bookmark2:hover, #bookmark3:hover, #bookmark4:hover, #bookmark5:hover {
-  margin-right: 89%;
+  margin-right: 94%;
 }
 @media (max-width: 900px) {
   .bookMark-wrapper {opacity:0; height: 0px; width: 0px;}
@@ -128,7 +128,7 @@
 }
 .bookMark {
   height: 85px;
-  margin-top: -39px;
+  margin-top: -34px;
   width: auto;
   display: flex;
   background-color: transparent;

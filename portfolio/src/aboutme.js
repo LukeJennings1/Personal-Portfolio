@@ -2,11 +2,11 @@ import './index.css'
 import { useInView } from 'react-intersection-observer';
 import { useRef, useState } from 'react';
 import Myskills from './myskills';
-import aboutMeIcon from './assets/icons8-bookmark-480 (2).png'
-import homeIcon from './assets/icons8-bookmark-480 (1).png'
-import skillsIcon from './assets/icons8-bookmark-480 (6).png'
-import projectsIcon from './assets/icons8-bookmark-480 (4).png'
-import contactIcon from './assets/icons8-bookmark-480 (5).png'
+import aboutMeIcon from './assets/about.png'
+import homeIcon from './assets/homeMAIN.png'
+import skillsIcon from './assets/skills.png'
+import projectsIcon from './assets/projects.png'
+import contactIcon from './assets/contact.png'
 
 
 
