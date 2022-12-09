@@ -68,7 +68,7 @@ function Aboutme() {
              </h2>
             <p className='about-me-text-content' ref={aboutMeAnimation1} >Hi! I'm Luke...and I love building things!</p>
             <p></p>
-            <p className='about-me-text-content' ref={aboutMeAnimation2} >From building my first computer at as a kid to graduating with an electrical engineering degree I have always
+            <p className='about-me-text-content' ref={aboutMeAnimation2} >From building my first computer as a kid to graduating with an electrical engineering degree I have always
                 been curious about how things work "under the hood". My love of development grew from using low-level languages (C++/C) in my degree 
                 where I found myself being drawn more to the design and UI/UX aspect of software development.  </p>
                 <p></p>

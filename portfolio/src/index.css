@@ -43,6 +43,13 @@
   from, to { border-color: transparent }
   25% { border-color: #FB7409; }
 }
+@media (max-width: 500px) {
+  #name {
+  animation: 
+  typing 1.25s steps(13, end),
+  blink-caret 0.75s step-end infinite;
+  }
+}
 #info {
   max-height: 40px;
   max-width: 440px;
@@ -62,6 +69,14 @@
   max-width: 248px;
   border: transparent;
   height: 100%;
+}
+@media (max-width: 500px) {
+  #info-block {
+    animation-name: block-reveal;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+  }
 }
 @keyframes block-reveal {
   100% {width: 85%;}
@@ -95,6 +110,7 @@
 }
 .bookMark-wrapper {
   position: fixed;
+  float: right;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -102,16 +118,47 @@
   top: 10px;
   width: 5%;
   margin-top: 100px; 
-  margin-left: 105%;
   background-color: transparent;
   opacity: 0;
   pointer-events: none;
 }
-#bookmark1, #bookmark2, #bookmark3, #bookmark4, #bookmark5 {
-  margin-right: 35%;
+@media (min-width: 1200px) {
+  .bookMark-wrapper {
+   margin-left: 105.5%;
+  }
+}
+@media (min-width: 1300px) {
+  .bookMark-wrapper {
+   margin-left: 102.5%;
+  }
+}
+@media (min-width: 1400px) {
+  .bookMark-wrapper {
+   margin-left: 101.5%;
+  }
+}
+@media (min-width: 1500px) {
+  .bookMark-wrapper {
+   margin-left: 101%;
+  }
+}
+@media (min-width: 1700px) {
+  .bookMark-wrapper {
+   margin-left: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  .bookMark-wrapper {
+   margin-left: 99.6%;
+  }
+}
+@media (min-width: 2200px) {
+  .bookMark-wrapper {
+   margin-left: 98.6%;
+  }
 }
 #bookmark1:hover, #bookmark2:hover, #bookmark3:hover, #bookmark4:hover, #bookmark5:hover {
-  margin-right: 94%;
+  margin-right: 60%;
 }
 @media (max-width: 900px) {
   .bookMark-wrapper {opacity:0; height: 0px; width: 0px;}
