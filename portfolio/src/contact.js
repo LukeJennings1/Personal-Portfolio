@@ -5,22 +5,45 @@ import emailIcon from './assets/emailIcon.png'
 import githubIcon from './assets/githubLogoWhite.png'
 import linkedInIcon from './assets/linkedInIcon.png'
 import discordIcon from './assets/discordIcon.png'
+import emailjs from '@emailjs/browser';
+import {useRef} from 'react'
+
 
 function ContactMe() {
+
+        const SubmitButton = useRef()   
+        const form = useRef();
+      
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs.sendForm('service_o9pe5d4', 'template_esbvmyj', form.current, '-hLfMpadrHDrcwM1Y')
+            .then((result) => {
+                console.log(result.text);
+                // e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+        }
+    
+        const clickSubmission = () => {
+            SubmitButton.current.style.opacity = 0;
+        }
 
     return (
         <div className="contact-me-page-wrapper"> 
             <h2 id = 'contact-me-page-title'>- Contact Me -</h2>
 
 
-        <div id = 'conact-me-content-wrapper'>
-            <form id = 'contact-me-input-wrapper'>
-                <input type='text' className="contact-me-form-inputs" placeholder="Name"></input>
-                <input type='email' className="contact-me-form-inputs" placeholder="Email"></input>
-                <textarea rows="10" columns ='5' id = 'contact-me-message-input' className="contact-me-form-inputs" placeholder="Message"></textarea>
-                <button id = 'contact-me-submit-button'>
+
+        <div  id = 'conact-me-content-wrapper'>
+            <form id = 'contact-me-input-wrapper' ref={form} onSubmit={sendEmail}>
+                <input type='text' className="contact-me-form-inputs" placeholder="Name" name="user_name"></input>
+                <input type='email' className="contact-me-form-inputs" placeholder="Email" name="user_email"></input>
+                <textarea rows="10" columns ='5' id = 'contact-me-message-input' className="contact-me-form-inputs" name="message" placeholder="Message"></textarea>
+                <submit type='submit' className = 'fadeClass' id ='contact-me-submit-button' value="Send" onClick = {() => {clickSubmission()}}>
                     <img className='send-Icon' src={sendIcon}></img>
-                </button>
+                </submit>
             </form>
             <div id = 'contact-me-links-wrapper'>
                 <div className='contact-me-links'>
