@@ -530,9 +530,20 @@
 .send-Icon {
   margin-top: 0px;
   height: 40px;
+  margin-left: 0px;
   width: auto;
   background-color: transparent;
 }
+.send-email-animation {
+  animation-name: send-animation;
+  animation-duration: 0.75s;
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count:; */
+}
+@keyframes send-animation {
+  from {margin-left: 0px; opacity: 1;}
+  to {margin-left: 300px; opacity: 0;}
+} 
 .link-Icon {
   margin-top: 5px;
   height: 40px;

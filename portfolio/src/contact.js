@@ -11,7 +11,7 @@ import {useRef} from 'react'
 
 function ContactMe() {
 
-        const SubmitButton = useRef()   
+        const submitButton = useRef()   
         const form = useRef();
       
         const sendEmail = (e) => {
@@ -27,9 +27,9 @@ function ContactMe() {
         }
     
         const clickSubmission = () => {
-            SubmitButton.current.style.opacity = 0;
+            submitButton.current.className += ' send-email-animation';
+            setInterval(function(){submitButton.current.className = 'send-Icon'}, 5000)
         }
-
     return (
         <div className="contact-me-page-wrapper"> 
             <h2 id = 'contact-me-page-title'>- Contact Me -</h2>
@@ -38,12 +38,12 @@ function ContactMe() {
 
         <div  id = 'conact-me-content-wrapper'>
             <form id = 'contact-me-input-wrapper' ref={form} onSubmit={sendEmail}>
-                <input type='text' className="contact-me-form-inputs" placeholder="Name" name="user_name"></input>
-                <input type='email' className="contact-me-form-inputs" placeholder="Email" name="user_email"></input>
-                <textarea rows="10" columns ='5' id = 'contact-me-message-input' className="contact-me-form-inputs" name="message" placeholder="Message"></textarea>
-                <submit type='submit' className = 'fadeClass' id ='contact-me-submit-button' value="Send" onClick = {() => {clickSubmission()}}>
-                    <img className='send-Icon' src={sendIcon}></img>
-                </submit>
+                <input type='text' className="contact-me-form-inputs" placeholder="Name" name="user_name" required></input>
+                <input type='email' className="contact-me-form-inputs" placeholder="Email" name="user_email" required></input>
+                <textarea rows="10" columns ='5' id = 'contact-me-message-input' className="contact-me-form-inputs" name="message" placeholder="Message" required></textarea>
+                <button type='submit' className = 'fadeClass' id ='contact-me-submit-button' value="Send" onClick = {() => {clickSubmission()}}>
+                    <img className='send-Icon' ref={submitButton} src={sendIcon}></img>
+                </button>
             </form>
             <div id = 'contact-me-links-wrapper'>
                 <div className='contact-me-links'>
