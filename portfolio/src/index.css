@@ -466,7 +466,7 @@
   to {margin-top: 150px; opacity: 1;}
 }
 .contact-me-page-wrapper {
-  height: 100vh;
+  height: 80vh;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -509,12 +509,11 @@
   justify-content: center;
   margin-top: 50px;
   gap: 70px;
-  height: 80vh;
   width: 100%;
 }
 @media (max-width: 1100px) {
-  #conact-me-content-wrapper{flex-direction: column;}
-  #contact-me-page-title{margin-bottom: 125px; z-index: 500;}
+  #conact-me-content-wrapper{flex-direction: column; margin-top: 25px}
+  #contact-me-page-title{margin-top: 200px;}
   .contact-me-form-inputs { width: 100%;}
   #page-bottom {margin-bottom: 10px;}
   #send-icon-text { width: 200px; overflow-wrap: break-word; }
@@ -601,6 +600,8 @@ align-items: center;
 justify-content: center;
 padding: 5px;
 color: var(--secondary-content-color);
+font-weight: bold;
+
 }
 .made-by {
   display: flex;
@@ -608,9 +609,11 @@ color: var(--secondary-content-color);
   align-items: center;
   justify-content: center;
   gap: 5px;
+
 }
 .content-wrapper-footer {
   padding-top: 5px;
+  
 }
 
 #github-logo {
