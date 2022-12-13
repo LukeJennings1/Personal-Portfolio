@@ -7,6 +7,7 @@ import Myskills from './myskills';
 import "./index.css"
 import { useInView } from 'react-intersection-observer';
 import { useRef, useState } from 'react';
+import Footer from './footer'
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
             {/* <div id = 'enter-bookmark' ref={aboutMeRef}></div> */}
       <Projects />
       <ContactMe />
+      <Footer />
+      
   </div>
   );
 }

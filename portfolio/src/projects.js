@@ -41,8 +41,8 @@ const exitContent = (projectCard, thumbailImage, header) => {
     <div id = 'projects-wrapper'>
         <h2 id = 'projects-page-title'>- Projects -</h2>
     
-    <div className = 'projects-grid-wrapper'>
-        <div className="projects-grid-square" 
+    <div className = 'projects-grid-wrapper'> 
+        {/* <div className="projects-grid-square" 
         onMouseEnter={() => {createContent(ProjectCard1, thumbailImage1, header1)}}
         onMouseLeave = {() => {exitContent(ProjectCard1, thumbailImage1, header1)}}>
             <div className='project-title-card'>
@@ -61,8 +61,8 @@ const exitContent = (projectCard, thumbailImage, header) => {
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage1} src={placeHolder}></img>
-        </div>
-        <div className="projects-grid-square"
+        </div> */}
+        {/* <div className="projects-grid-square"
          onMouseEnter={() => {createContent(ProjectCard2, thumbailImage2, header2)}}
          onMouseLeave = {() => {exitContent(ProjectCard2, thumbailImage2, header2)}}>
         <div className='project-title-card'>
@@ -81,7 +81,7 @@ const exitContent = (projectCard, thumbailImage, header) => {
                 </div>
             </div>
             <img className="projects-thumbnail-image" ref={thumbailImage2} src={placeHolder}></img>
-        </div>
+        </div> */}
         <div className="projects-grid-square" 
          onMouseEnter={() => {createContent(ProjectCard3, thumbailImage3, header3)}}
          onMouseLeave = {() => {exitContent(ProjectCard3, thumbailImage3, header3)}}>
