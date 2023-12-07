@@ -4,6 +4,8 @@ import jsIcon from './assets/javascript-plain.svg'
 import typescriptIcon from './assets/typescript-plain.svg'
 import reactIcon from './assets/react-original.svg'
 import mongoIcon from './assets/mongodb-plain.svg'
+import phpIcon from './assets/php-logo.png'
+import mysqlIcon from './assets/mysqli-logo.png'
 import nextjsIcon from './assets/next-js-white.svg'
 import nodejsIcon from './assets/nodejs-plain.svg'
 import gitIcon from './assets/git-plain.svg'
@@ -51,7 +53,7 @@ const icon12 = useRef()
 
     return (
 <>
-        <h2 id = 'about-me-tech-stack-title' >{console.log(inView)}- My Skills -</h2>
+        <h2 id = 'about-me-tech-stack-title' >- My Skills -</h2>
             <div id = 'grid-container'>
         <div className = 'about-me-content-wrapper'>
         <div className='grid-square' ref={ref} id = 'grid-square-1'>
@@ -74,17 +76,17 @@ const icon12 = useRef()
             <img className='icon' src={reactIcon} ref ={icon5}></img>
             <div>React</div>
         </div>
-        <div className='grid-square' id = 'grid-square-6'>
-            <img className='icon'   src={mongoIcon} ref ={icon6}></img>
-            <div>Mongo DB</div>
-        </div>
         <div className='grid-square' id = 'grid-square-7'>
             <img className='icon'  src={nextjsIcon} ref ={icon7}></img>
             <div>Next.js</div>
         </div>
+        <div className='grid-square' id = 'grid-square-6'>
+            <img className='icon'   src={mysqlIcon} ref ={icon6}></img>
+            <div>MYSQL</div>
+        </div>
         <div className='grid-square' id = 'grid-square-8'>
-            <img className='icon'  src={nodejsIcon} ref ={icon8}></img>
-            <div>Node.js</div>
+            <img className='icon'  src={phpIcon} ref ={icon8}></img>
+            <div>PHP</div>
         </div>
 
         <div className='grid-square' id = 'grid-square-9'>

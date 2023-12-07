@@ -1,8 +1,9 @@
-import memoryCardGameImage from './assets/memoryCardGame.png'
-import wheresWallyGame from './assets/wheresWally.png'
-import EcomSite from './assets/EcomSite.png'
-import weatherAPIApp from './assets/weatherAPI.png'
-import placeHolder from './assets/placeholder.png'
+import memoryCardGameImage from './assets/memoryCardGame.png';
+import wheresWallyGame from './assets/wheresWally.png';
+import EcomSite from './assets/EcomSite.png';
+import weatherAPIApp from './assets/weatherAPI.png';
+import bookabuilder from './assets/babImage.png';
+import placeHolder from './assets/placeholder.png';
 import { useInView } from 'react-intersection-observer';
 import { useRef, useState } from 'react';
 
@@ -37,10 +38,38 @@ const exitContent = (projectCard, thumbailImage, header) => {
     thumbailImage.current.id = ''
     header.current.id = ''
 }
+const animationInitial = (projectCard, thumbailImage, header) => {
+    projectCard.current.id = 'professional-animation1'
+    thumbailImage.current.id += 'fadeClass'
+    header.current.id += 'professional-reveal-animation-class'
+}
+const animationExit = (projectCard, thumbailImage, header) => {
+    projectCard.current.id = 'professional-animation-initial'
+    thumbailImage.current.id = ''
+    header.current.id = ''
+}
     return (
     <div id = 'projects-wrapper'>
-        <h2 id = 'projects-page-title'>- Projects -</h2>
     
+    <div className='professional-work-title-card'
+             onMouseEnter={() => {animationInitial(ProjectCard1, thumbailImage1, header1)}}
+             onMouseLeave = {() => {animationExit(ProjectCard1, thumbailImage1, header1)}}>
+            <h2 id = 'professional-work-title' className='section-heading'>- Professional Work -</h2>
+                <div className='professional-title-card-header' ref={header1}>
+                    <h1 className='project-title'>Book a builder UK</h1>
+                    <h2 className='project-title project-subheading'>React | PHP | HTML5 | CSS3 </h2>
+                </div>
+                <div className='project-info-card-button-wrapper'
+                ref = {ProjectCard1}>
+                    <a href='https://www.bookabuilderuk.com' target="_blank">
+                    <button className='professional-work-link'>More information</button>
+                    </a>
+                </div>
+            <img className="professional-work-thumbnail-image" ref={thumbailImage1} src={bookabuilder}></img>
+    </div>
+
+            <h2 id = 'projects-page-title' className='section-heading'>- Personal Projects -</h2>
+
     <div className = 'projects-grid-wrapper'> 
         {/* <div className="projects-grid-square" 
         onMouseEnter={() => {createContent(ProjectCard1, thumbailImage1, header1)}}

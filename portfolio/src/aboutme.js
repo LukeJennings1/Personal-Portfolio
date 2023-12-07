@@ -36,11 +36,8 @@ function Aboutme() {
          aboutMeAnimation3.current.id += 'about-me-text-content-animation3'
      }
  
-
-
     return (
-    <div id = 'about-me-wrapper'>
-        
+    <div id = 'about-me-wrapper'>        
         <div className='bookMark-wrapper fadeAnimation' ref={fadeInAnimation}>
             <a href='.onload-wrapper' className = 'bookMark' id = 'bookmark1'>
                 <img className = 'bookMark' src={homeIcon}></img>
@@ -56,7 +53,7 @@ function Aboutme() {
             </a>
             <a href ='#contact-me-page-title' className = 'bookMark' id = 'bookmark5'>
                 <img  className = 'bookMark' src={contactIcon}></img>
-            </a>              
+            </a>           
       </div>
 
             <h2 id = 'about-me-page-title' ref={ref}>
@@ -68,14 +65,9 @@ function Aboutme() {
              </h2>
             <p className='about-me-text-content' ref={aboutMeAnimation1} >Hi! I'm Luke...and I love building things!</p>
             <p></p>
-            <p className='about-me-text-content' ref={aboutMeAnimation2} >From building my first computer as a kid to graduating with an electrical engineering degree I have always
-                been curious about how things work "under the hood". My love of development grew from using low-level languages (C++/C) in my degree 
-                where I found myself being drawn more to the design and UI/UX aspect of software development.  </p>
+            <p className='about-me-text-content' ref={aboutMeAnimation2} >I'm a dedicated full-stack developer at Book a Builder UK, bringing a unique perspective to software development with a degree in electrical engineering. In my current role, I focus on enhancing the user experience on the customer-facing site, optimizing the job-finding algorithm, and ensuring a seamless platform for users to connect with skilled tradespeople.</p>
                 <p></p>
-            <p className='about-me-text-content' ref={aboutMeAnimation3} >While studying for my degree I worked as a project co-ordinator for an FTSE 500 company within a software-orientated
-                engineering team. I believe this experience of working and studying full-time demonstrates my passion for continual 
-                professional development and gives me key insight into the management behind software-based project rollouts 
-                in addition to my software development and engineering experience.  </p>
+            <p className='about-me-text-content' ref={aboutMeAnimation3} >Proficient in Next.js, Vanilla JS, PHP, CSS3, and HTML5, I specialise in implementing new features across the client-facing site and backend CMS system. Whether leveraging the capabilities of Next.js or applying the fundamentals of Vanilla JS, each line of code is crafted to contribute to an exceptional user experience. A notable achievement has been a 60% increase in website production efficiency for tradespeople, achieved through streamlined processes since joining Book a Builder. </p>
                 <p></p>
 
             <Myskills />
