@@ -65,9 +65,9 @@ function Aboutme() {
              </h2>
             <p className='about-me-text-content' ref={aboutMeAnimation1} >Hi! I'm Luke...and I love building things!</p>
             <p></p>
-            <p className='about-me-text-content' ref={aboutMeAnimation2} >I'm a dedicated full-stack developer at Book a Builder UK, bringing a unique perspective to software development with a degree in electrical engineering. In my current role, I focus on enhancing the user experience on the customer-facing site, optimizing the job-finding algorithm, and ensuring a seamless platform for users to connect with skilled tradespeople.</p>
+            <p className='about-me-text-content' ref={aboutMeAnimation2} >I'm a dedicated professional full-stack developer, bringing a unique perspective to software development with a degree in electrical engineering</p>
                 <p></p>
-            <p className='about-me-text-content' ref={aboutMeAnimation3} >Proficient in Next.js, Vanilla JS, PHP, CSS3, and HTML5, I specialise in implementing new features across the client-facing site and backend CMS system. Whether leveraging the capabilities of Next.js or applying the fundamentals of Vanilla JS, each line of code is crafted to contribute to an exceptional user experience. A notable achievement has been a 60% increase in website production efficiency for tradespeople, achieved through streamlined processes since joining Book a Builder. </p>
+            <p className='about-me-text-content' ref={aboutMeAnimation3} >Proficient in Next.js, Vanilla JS, PHP, CSS3, and HTML5 </p>
                 <p></p>
 
             <Myskills />

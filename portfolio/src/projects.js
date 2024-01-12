@@ -51,7 +51,7 @@ const animationExit = (projectCard, thumbailImage, header) => {
     return (
     <div id = 'projects-wrapper'>
     
-    <div className='professional-work-title-card'
+    {/* <div className='professional-work-title-card'
              onMouseEnter={() => {animationInitial(ProjectCard1, thumbailImage1, header1)}}
              onMouseLeave = {() => {animationExit(ProjectCard1, thumbailImage1, header1)}}>
             <h2 id = 'professional-work-title' className='section-heading'>- Professional Work -</h2>
@@ -66,7 +66,7 @@ const animationExit = (projectCard, thumbailImage, header) => {
                     </a>
                 </div>
             <img className="professional-work-thumbnail-image" ref={thumbailImage1} src={bookabuilder}></img>
-    </div>
+    </div> */}
 
             <h2 id = 'projects-page-title' className='section-heading'>- Personal Projects -</h2>
 
